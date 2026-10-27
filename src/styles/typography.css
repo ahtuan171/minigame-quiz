@@ -1,0 +1,393 @@
+/* Three roles, one shared system. All font families and fallbacks live in @theme. */
+:root {
+  font-weight: 400;
+  line-height: 1.7;
+}
+button,
+input,
+textarea {
+  font-family: var(--font-body);
+}
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+.hero-copy h1 {
+  font-family: var(--font-body);
+  font-size: clamp(44px, 5vw, 64px);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: 0;
+  padding-block: 4px;
+}
+.hero-story {
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 400;
+}
+.hero-invitation {
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.8;
+}
+.eyebrow,
+.tiny-label,
+.story-subtitle {
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  line-height: 1.8;
+}
+.eyebrow {
+  font-size: 11px;
+}
+.story-subtitle {
+  font-size: 12px;
+  letter-spacing: 1.8px;
+}
+.primary-button,
+.answer {
+  font-weight: 600;
+  font-size: 14px;
+}
+.cta-caption,
+.site-footer,
+.journey-item p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.journey-intro h2 {
+  font-family: var(--font-body);
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+.journey-item h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.scene-caption {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.side-scroll-screen .adventure-heading h1 {
+  font-family: var(--font-body);
+  font-size: clamp(24px, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.side-scroll-screen .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.7px;
+}
+.prototype-chip {
+  font-size: 12px;
+}
+.world-location h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.world-location p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.world-ready h3 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.2vw, 36px);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 10px 0 18px;
+}
+.world-ready-kicker {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+.world-ready .primary-button {
+  font-size: 14px;
+}
+.enemy-speech strong {
+  font-family: var(--font-display);
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.enemy-speech p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.journey-status,
+.encounter-count,
+.hud-magic > span,
+.world-travel-caption,
+.world-victory-note {
+  font-family: var(--font-retro);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.encounter-count {
+  font-size: 26px;
+}
+.world-victory-note {
+  font-size: 26px;
+}
+.journey-status {
+  padding-block: 12px;
+}
+.encounter-panel .question-card h2 {
+  font-family: var(--font-body);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.encounter-panel .question-instruction {
+  font-size: 13px;
+  font-weight: 400;
+}
+.encounter-panel .answer {
+  font-size: 15px;
+  font-weight: 500;
+}
+.question-topline > span:last-child,
+.answer-letter {
+  font-family: var(--font-retro);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.encounter-panel .question-topline {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+.encounter-panel .answer-guidance {
+  font-size: 12px;
+}
+.encounter-panel .lifeline strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+.encounter-panel .lifeline small {
+  font-size: 11px;
+  font-weight: 400;
+}
+.encounter-panel .lifeline-heading {
+  font-size: 11px;
+}
+.encounter-panel .lifeline-heading > span:last-child {
+  font-size: 11px;
+}
+.side-scroll-screen .hint-card h2 {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.settings-dialog > p,
+.coming-soon p {
+  font-size: 13px;
+}
+.hint-card p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.settings-dialog .settings-note {
+  font-size: 12px;
+}
+.prototype-scope {
+  font-size: 12px;
+}
+@media (max-width: 1000px) {
+  .journey-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .hero-copy h1 {
+    font-size: 46px;
+  }
+  .hero-copy .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.3px;
+  }
+  .hero-story {
+    font-size: 14px;
+  }
+  .hero-invitation {
+    font-size: 13px;
+  }
+  .hero-copy .cta-caption {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  .story-subtitle {
+    font-size: 10px;
+    letter-spacing: 1.1px;
+  }
+  .journey-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .journey-intro h2 {
+    font-size: 19px;
+  }
+  .journey-item h3 {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  .journey-item p {
+    font-size: 10px;
+  }
+  .site-footer {
+    font-size: 11px;
+  }
+  .side-scroll-screen .adventure-heading h1 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .side-scroll-screen .eyebrow {
+    font-size: 10px;
+  }
+  .world-ready h3 {
+    font-size: 29px;
+  }
+  .world-ready-kicker {
+    font-size: 9px;
+  }
+  .world-ready .primary-button {
+    font-size: 12px;
+  }
+  .world-location h2 {
+    font-size: 22px;
+  }
+  .world-location p {
+    font-size: 10px;
+  }
+  .enemy-speech strong {
+    font-size: 23px;
+  }
+  .enemy-speech p {
+    font-size: 11px;
+  }
+  .journey-status,
+  .world-travel-caption {
+    font-size: 20px;
+  }
+  .encounter-count {
+    font-size: 23px;
+  }
+  .world-victory-note {
+    font-size: 22px;
+  }
+  .encounter-panel .question-card h2 {
+    font-size: 19px;
+  }
+  .encounter-panel .answer {
+    font-size: 14px;
+  }
+  .encounter-panel .lifeline strong {
+    font-size: 11px;
+  }
+  .encounter-panel .lifeline small {
+    font-size: 10px;
+  }
+  .encounter-panel .lifeline-heading {
+    font-size: 10px;
+  }
+  .encounter-panel .lifeline-heading > span:last-child {
+    font-size: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .hero-copy h1 {
+    font-size: 41px;
+  }
+  .side-scroll-screen .adventure-heading h1 {
+    font-size: 22px;
+  }
+  .world-ready h3 {
+    font-size: 27px;
+  }
+  .world-ready-kicker {
+    font-size: 8px;
+  }
+  .encounter-panel .question-card h2 {
+    font-size: 18px;
+  }
+  .encounter-panel .lifeline strong {
+    font-size: 10px;
+  }
+}
+
+.enemy-speech {
+  bottom: 165%;
+}
+@media (max-width: 760px) {
+  .enemy-speech {
+    bottom: 130%;
+  }
+  .world-location p {
+    max-width: 105px;
+  }
+}
+
+/* Pixel typography belongs to the adventure. Menus and reward messages use body type. */
+.settings-top h2,
+.reward-settings .settings-top h2 {
+  font-family: var(--font-body);
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.treasure-card,
+.treasure-card h2,
+.treasure-card h3,
+.treasure-card code {
+  font-family: var(--font-body);
+}
+.treasure-card h2 {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.treasure-card .reward-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 24px 0 10px;
+  overflow-wrap: anywhere;
+}
+.treasure-card .gift-code code {
+  font-size: 23px;
+  font-weight: 500;
+}
+.treasure-card .reward-congratulations {
+  color: #89677e;
+}
+@media (max-width: 760px) {
+  .treasure-card h2 {
+    font-size: 23px;
+  }
+  .treasure-card .reward-title {
+    font-size: 18px;
+  }
+  .settings-top h2,
+  .reward-settings .settings-top h2 {
+    font-size: 21px;
+  }
+}
+
+/* Compact answer badges use the same readable type as their option text. */
+.answer-letter {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
